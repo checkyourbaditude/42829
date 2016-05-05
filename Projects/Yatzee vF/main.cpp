@@ -28,8 +28,6 @@ bool isValid4(int userIn);
 bool isValid5(int userIn);
 
 //the grading portion of the game, after each turn
-void finishTurn(unsigned short d1,unsigned short d2,unsigned short d3,
-        unsigned short d4,unsigned short d5);
 unsigned int totAces(unsigned short o1,unsigned short o2,unsigned short o3,
         unsigned short o4,unsigned short o5);
 unsigned int totTwos(unsigned short o1,unsigned short o2,unsigned short o3,
@@ -69,11 +67,6 @@ int main(int argc, char** argv) {
     cin.ignore();
     
     //variables
-    bool is1to5=0;
-    unsigned int nDice=0;
-    int nKeep=0;
-    int cTurn=0;
-    
     //keeping track if a category has been used
     //upper section
     bool usedAces=0, usedTwos=0, usedThrees=0, usedFours=0, usedFives=0, usedSixes=0;
@@ -90,7 +83,7 @@ int main(int argc, char** argv) {
     
     //get the file information
     //initiate Game
-    for(int j=1;j<13;j++){
+    for(int j=1;j<=13;j++){
         cout<<"Turn #"<<j<<endl;
         unsigned short die1=roll();//[1,6]
         unsigned short die2=roll();//[1,6]
@@ -99,14 +92,19 @@ int main(int argc, char** argv) {
         unsigned short die5=roll();//[1,6]
         
         //output the results
-            cout<<"Dice 1:"<<die1<<endl;
-            cout<<"Dice 2:"<<die2<<endl;
-            cout<<"Dice 3:"<<die3<<endl;
-            cout<<"Dice 4:"<<die4<<endl;
-            cout<<"Dice 5:"<<die5<<endl;
+        cout<<"Dice 1:"<<die1<<endl;
+        cout<<"Dice 2:"<<die2<<endl;
+        cout<<"Dice 3:"<<die3<<endl;
+        cout<<"Dice 4:"<<die4<<endl;
+        cout<<"Dice 5:"<<die5<<endl;
         
         //initiate a turn
         for(int i=2;i<=3;i++){
+            
+            //local variables
+            bool is1to5=0;
+            unsigned int nDice=0;
+            int nKeep=0;
             //data validation, make sure all digits are between 1 and 5
             //make sure no numbers greater than 5 are entered
             
@@ -807,7 +805,7 @@ int main(int argc, char** argv) {
                         break;
                     }
                     else if(usedYahtzee==0){
-                        cout<<"You have scratched your Large Straight!"<<endl;
+                        cout<<"You have scratched your Yahtzee!"<<endl;
                         SS12=0;
                         okScore=1;
                         usedYahtzee=1;
