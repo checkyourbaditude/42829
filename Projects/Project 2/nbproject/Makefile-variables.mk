@@ -7,21 +7,21 @@ CND_BASEDIR=`pwd`
 CND_BUILDDIR=build
 CND_DISTDIR=dist
 # Debug configuration
-CND_PLATFORM_Debug=GNU-Linux
-CND_ARTIFACT_DIR_Debug=dist/Debug/GNU-Linux
-CND_ARTIFACT_NAME_Debug=fixyahtzee
-CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-Linux/fixyahtzee
-CND_PACKAGE_DIR_Debug=dist/Debug/GNU-Linux/package
-CND_PACKAGE_NAME_Debug=fixyahtzee.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/GNU-Linux/package/fixyahtzee.tar
+CND_PLATFORM_Debug=Cygwin-Windows
+CND_ARTIFACT_DIR_Debug=dist/Debug/Cygwin-Windows
+CND_ARTIFACT_NAME_Debug=yahtzeems
+CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin-Windows/yahtzeems
+CND_PACKAGE_DIR_Debug=dist/Debug/Cygwin-Windows/package
+CND_PACKAGE_NAME_Debug=yahtzeems.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin-Windows/package/yahtzeems.tar
 # Release configuration
-CND_PLATFORM_Release=GNU-Linux
-CND_ARTIFACT_DIR_Release=dist/Release/GNU-Linux
-CND_ARTIFACT_NAME_Release=fixyahtzee
-CND_ARTIFACT_PATH_Release=dist/Release/GNU-Linux/fixyahtzee
-CND_PACKAGE_DIR_Release=dist/Release/GNU-Linux/package
-CND_PACKAGE_NAME_Release=fixyahtzee.tar
-CND_PACKAGE_PATH_Release=dist/Release/GNU-Linux/package/fixyahtzee.tar
+CND_PLATFORM_Release=Cygwin-Windows
+CND_ARTIFACT_DIR_Release=dist/Release/Cygwin-Windows
+CND_ARTIFACT_NAME_Release=yahtzeems
+CND_ARTIFACT_PATH_Release=dist/Release/Cygwin-Windows/yahtzeems
+CND_PACKAGE_DIR_Release=dist/Release/Cygwin-Windows/package
+CND_PACKAGE_NAME_Release=yahtzeems.tar
+CND_PACKAGE_PATH_Release=dist/Release/Cygwin-Windows/package/yahtzeems.tar
 #
 # include compiler specific variables
 #

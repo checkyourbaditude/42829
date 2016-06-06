@@ -831,6 +831,7 @@ unsigned short Sum(unsigned short tChk[]){
 
 bool is3Kind(unsigned short Arry[]){
     if ((Arry[0]==Arry[1]&&Arry[1]==Arry[2])||
+            (Arry[1]==Arry[2]&&Arry[2]==Arry[3])||
             (Arry[2]==Arry[3]&&Arry[3]==Arry[4])){
         return true;
     }
@@ -1090,4 +1091,3 @@ void prntArr(bool Arr[], unsigned short SIZE){
         cout<<i+1<<") Value: "<<Arr[i]<<endl;
     }
 }
-
